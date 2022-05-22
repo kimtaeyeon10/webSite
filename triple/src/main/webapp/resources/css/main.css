@@ -1,0 +1,265 @@
+@charset "UTF-8";
+#sec{width:100%;}
+#sec .main{width:100%;}
+
+/* 메인슬라이드 */
+#sec .main .main_slide{height:450px;width:100%;display: block;position: relative;}
+#sec .main .main_slide .main_slider{width:100%;height:100%;}
+#sec .main .main_slide .main_slider .swiper-slide{width:100%;height:100%;display: block;background: #000;}
+#sec .main .main_slide .main_slider .swiper-slide a{width: 100%;height: 100%;display: block;}
+
+#sec .main .main_slide .main_slider .swiper-slide.img1{background: url(../img/대문1.jpg) no-repeat 50% 50%;background-size: cover;}
+#sec .main .main_slide .main_slider .swiper-slide.img2{background: url(../img/대문2.jpg) no-repeat 50% 50%;background-size: cover;}
+#sec .main .main_slide .main_slider .swiper-slide.img3{background: url(../img/대문3.jpg) no-repeat 50% 50%;background-size: cover;}
+#sec .main .main_slide .main_slider .swiper-slide.img4{background: url(../img/대문4.jpg) no-repeat 50% 50%;background-size: cover;}
+
+#sec .main .main_slide .main_slider .main_pagi{height:61px;bottom:35px;z-index: 3; width:1300px; left:50%; transform: translateX(-50%);}
+#sec .main .main_slide .main_slider .main_pagi span{margin:0;padding:15px 0 40px;border-radius: 0;background: none;border-top:1px solid rgba(255,255,255,.5);position: relative;width:25%;opacity: 1;font-family: 'Noto Sans KR';font-size: 13px;overflow: hidden;}
+#sec .main .main_slide .main_slider .main_pagi span:after{width:63%;display: inline-block;text-align: left;margin-left:15px;color:#fff;height:36px;letter-spacing: -1px;}
+#sec .main .main_slide .main_slider .main_pagi span:before{content: "";border:2px solid #fff;width:4px;height:4px;display: inline-block;border-radius: 50%;position: absolute;margin-top:3px;background: #000;}
+
+#sec .main .main_slide .main_slider .main_pagi span:nth-child(1)::after{content: "[KTX]봄꽃특선! 천년고도 경주 왕벚꽃여행";}
+#sec .main .main_slide .main_slider .main_pagi span:nth-child(2)::after{content: "청암산 자연속 오토캠핑/캐러번";}
+#sec .main .main_slide .main_slider .main_pagi span:nth-child(3)::after{content: "[삼각지역]예약필수! 줄서도 못 먹는 맛집 몽탄";}
+#sec .main .main_slide .main_slider .main_pagi span:nth-child(4)::after{content: "[특별할인] 봄날 제주의 2일간의 골프 투어 더 클래식";}
+
+#sec .main .main_slide .main_slider .main_pagi span.swiper-pagination-bullet-active::before{border:2px solid #5de4c2;background: #fff;}
+#sec .main .main_slide .main_slider .main_pagi span.swiper-pagination-bullet-active{border-top:4px solid rgba(255,255,255,.7);}
+
+.slide_cover{position: absolute;bottom:0;width:100%;height:156px;z-index: 2;background-image: linear-gradient(transparent,rgba(0,0,0,.7));}
+/* 메인슬라이드 끝 */
+
+/* 어바웃 */
+#sec .about{margin-top:40px;}
+#sec .about .about_in{width:1300px;margin:0 auto;padding:0 30px;}
+#sec .about .about_in > .txt{font-size:22px;line-height:30px;font-weight: 500;margin-bottom:45px;}
+
+#sec .about .about_in .about_btn{}
+#sec .about .about_in .about_btn:after{content: "";display: block;clear: both;}
+#sec .about .about_in .about_btn > div{width:49%;background:rgba(93,228,193,.2);border-radius: 10px;font-size:14px;font-weight: 500;overflow: hidden;}
+#sec .about .about_in .about_btn .left{float:left;}
+#sec .about .about_in .about_btn .right{float:right;}
+
+#sec .about .about_in .about_btn > div.on{background: rgba(93,228,193,.6);}
+
+#sec .about .about_in .about_btn > div h2 a{display: block;color:rgba(0,0,0,.4);padding:15px 25px;}
+#sec .about .about_in .about_btn > div.on h2 a{color:rgba(0,0,0,1)}
+
+#sec .about .about_in .about_tab{margin-top:20px;}
+#sec .about .about_in .about_tab .tab_in{width:100%;height:300px;overflow: auto;border:1px solid #fff;overflow: hidden;border-radius: 10px;border:1px solid rgba(0,0,0,.3);}
+#sec .about .about_in .about_tab .tab_in .wrap{display:flex;flex-wrap: wrap;height:100%;}
+#sec .about .about_in .about_tab .tab_in .wrap .box{height:100%;overflow: auto;}
+#sec .about .about_in .about_tab .tab_in .wrap .box.left{width:65%;border-right:1px solid rgba(0,0,0,.3);}
+#sec .about .about_in .about_tab .tab_in .wrap .box.left{-ms-overflow-style: none;scrollbar-width: none;}
+#sec .about .about_in .about_tab .tab_in .wrap .box.left::-webkit-scrollbar {display: none;}
+#sec .about .about_in .about_tab .tab_in .wrap .box.left table{border-collapse: collapse;width:100%;overflow: hidden;}
+#sec .about .about_in .about_tab .tab_in .wrap .box.left table tr{}
+#sec .about .about_in .about_tab .tab_in .wrap .box.left table tr th{border:1px solid rgba(0,0,0,.3);padding:10px;font-weight: 500;font-size:16px;background: rgb(160, 160, 160);border-top:0;color:#fff;width:15%;}
+#sec .about .about_in .about_tab .tab_in .wrap .box.left table tr td{border:1px solid rgba(0,0,0,.3);text-align: center;font-size:14px;padding:5px;}
+#sec .about .about_in .about_tab .tab_in .wrap .box.left table tr th:first-child{border-left:0;width:25%;}
+#sec .about .about_in .about_tab .tab_in .wrap .box.left table tr th:nth-child(3){width:25%;}
+#sec .about .about_in .about_tab .tab_in .wrap .box.left table tr td:first-child{border-left:0;}
+#sec .about .about_in .about_tab .tab_in .wrap .box.left table tr th:last-child{border-right:0;width:20%;}
+#sec .about .about_in .about_tab .tab_in .wrap .box.left table tr td:last-child{border-right:0;}
+#sec .about .about_in .about_tab .tab_in .wrap .box.left table tr:last-child td{border-bottom:0;}
+
+#sec .about .about_in .about_tab .tab_in .wrap .box.left table tr:nth-child(2n + 1) td{background: rgba(0,0,0,.1);}
+
+#sec .about .about_in .about_tab .tab_in .wrap .box.right{width:35%;padding:30px;-ms-overflow-style: none;scrollbar-width: none;}
+#sec .about .about_in .about_tab .tab_in .wrap .box.right::-webkit-scrollbar {display: none;}
+#sec .about .about_in .about_tab .tab_in .wrap .box.right ul{}
+#sec .about .about_in .about_tab .tab_in .wrap .box.right ul li{display: flex;line-height:28px;border-bottom:1px solid rgba(0,0,0,.15);padding-bottom:12px;margin-bottom:12px;}
+#sec .about .about_in .about_tab .tab_in .wrap .box.right ul li:last-child{border-bottom:0;margin-bottom:0;padding-bottom:0;}
+#sec .about .about_in .about_tab .tab_in .wrap .box.right ul li h2{width:70px;text-align: center;font-size:14px;}
+#sec .about .about_in .about_tab .tab_in .wrap .box.right ul li input{padding:0 10px;cursor: pointer;width:calc(100% - 70px);border:1px solid rgba(0,0,0,.3);letter-spacing: 1px;}
+#sec .about .about_in .about_tab .tab_in .wrap .box.right ul li select{width:calc(100% - 70px);outline: none;padding:0 10px;cursor: pointer;border:1px solid rgba(0,0,0,.3);letter-spacing: 1px;}
+#sec .about .about_in .about_tab .tab_in .wrap .box.right .txt{margin-top:20px;}
+#sec .about .about_in .about_tab .tab_in .wrap .box.right .txt:after{content: "";display: block;clear: both;}
+#sec .about .about_in .about_tab .tab_in .wrap .box.right .txt h2{float:left;font-size:14px;padding:10px 0 10px 14px;}
+#sec .about .about_in .about_tab .tab_in .wrap .box.right .txt button{border:1px solid rgba(0,0,0,.3);float:right;padding:10px 20px;background: #fff;border-radius: 10px;cursor: pointer;}
+#sec .about .about_in .about_tab .tab_in .wrap .box.right .txt button:hover{background: #5de4c2;border:1px solid transparent;color:#fff;}
+
+#sec .about .about_in .about_icon{width:100%;padding:30px 0;}
+#sec .about .about_in .about_icon .icon_in{}
+#sec .about .about_in .about_icon .icon_in ul{display: flex;flex-wrap:wrap;}
+#sec .about .about_in .about_icon .icon_in ul li{width:20%;}
+#sec .about .about_in .about_icon .icon_in ul li.icon_t{margin-bottom:50px;}
+#sec .about .about_in .about_icon .icon_in ul li a{display: block;width:100%;height:100%;width:130px;margin:0 auto;}
+#sec .about .about_in .about_icon .icon_in ul li a .img{width:100px;height:100px;margin:0 auto;}
+#sec .about .about_in .about_icon .icon_in ul li a .img img{display: block;width:100%;height:100%;}
+
+#sec .about .about_in .about_icon .icon_in ul li a .txt{text-align: center;}
+#sec .about .about_in .about_icon .icon_in ul li a .txt h3{padding:0 0 15px;font-weight: 600;color:#333;font-size:15px;}
+/* 어바웃 끝 */
+
+/* 국내여행 카테고리 */
+#sec .category{margin-top:40px;}
+#sec .category .gory_in{width:1240px;margin:0 auto;}
+#sec .category .gory_in .gory_txt{font-size:22px;line-height:30px;font-weight: 500;margin-bottom:25px;}
+#sec .category .gory_in .gory_con{width: 100%; height: 230px;}
+#sec .category .gory_in .gory_con .gory_pagebtn {width: 100%;height: 20px;display: flex;justify-content: flex-end;margin-bottom:10px;}
+#sec .category .gory_in .gory_con .gory_pagebtn .gory_lbtn {margin-right:5px;border:1px solid #999;width:20px;height:20px;cursor:pointer;}
+#sec .category .gory_in .gory_con .gory_pagebtn .gory_rbtn {border:1px solid #999;width:20px;height:20px;cursor:pointer;}
+#sec .category .gory_in .gory_con ul{display: flex;}
+#sec .category .gory_in .gory_con ul li{position: relative;margin: 0 30px 30px 0;}
+#sec .category .gory_in .gory_con ul .li9{margin-right:0;}
+#sec .category .gory_in .gory_con ul li a{display: block;width:100%;height:100%;}
+#sec .category .gory_in .gory_con ul li a .img{width:180px;height:180px;border-radius: 50%;overflow: hidden;}
+#sec .category .gory_in .gory_con ul li a .cover{width:180px;height:180px;border-radius: 50%;overflow: hidden;position: absolute;left:0;top:0;background: rgba(0,0,0,.4);display: none;}
+#sec .category .gory_in .gory_con ul li a:hover .cover{display: block;}
+#sec .category .gory_in .gory_con ul li a .cover h2{position: absolute;left:50%;top:50%;transform: translate(-50%,-50%);color:#fff;font-size:22px;width:100%;}
+#sec .category .gory_in .gory_con ul li a h2{margin-top:10px;height:30px;line-height:30px;text-align: center;color:#000;}
+
+#sec .category .gory_in .gory_con ul .li1 a .img{background:url(../img/gory/1.jpeg) no-repeat 50% 50%;}
+#sec .category .gory_in .gory_con ul .li2 a .img{background:url(../img/gory/2.jpeg) no-repeat 50% 50%;}
+#sec .category .gory_in .gory_con ul .li3 a .img{background:url(../img/gory/3.jpeg) no-repeat 50% 50%;}
+#sec .category .gory_in .gory_con ul .li4 a .img{background:url(../img/gory/4.jpeg) no-repeat 50% 50%;}
+#sec .category .gory_in .gory_con ul .li5 a .img{background:url(../img/gory/5.jpeg) no-repeat 50% 50%;}
+#sec .category .gory_in .gory_con ul .li6 a .img{background:url(../img/gory/1.jpeg) no-repeat 50% 50%;}
+#sec .category .gory_in .gory_con ul .li7 a .img{background:url(../img/gory/2.jpeg) no-repeat 50% 50%;}
+#sec .category .gory_in .gory_con ul .li8 a .img{background:url(../img/gory/3.jpeg) no-repeat 50% 50%;}
+#sec .category .gory_in .gory_con ul .li9 a .img{background:url(../img/gory/4.jpeg) no-repeat 50% 50%;}
+/* 국내여행 카테고리 끝 */
+
+/* 인기트립 */
+#sec .hot{margin-top:40px;}
+#sec .hot .hot_in{width:1240px;margin:0 auto;}
+#sec .hot .hot_in .hot_txt{font-size:22px;line-height:30px;font-weight: 500;margin-bottom:45px;}
+
+#sec .hot .hot_in .list{}
+#sec .hot .hot_in .list .list_in{}
+#sec .hot .hot_in .list .list_in ul{display: flex;justify-content: center;flex-wrap: wrap;}
+#sec .hot .hot_in .list .list_in ul li{height:310px;width:285px;overflow: hidden;border-radius: 15px;margin-bottom:33px;margin-right:33px;box-shadow: 2px 2px 15px rgb(0 0 0 / 15%);}
+#sec .hot .hot_in .list .list_in ul li:nth-child(4),#sec .hot .hot_in .list .list_in ul li:nth-child(8),#sec .hot .hot_in .list .list_in ul li:nth-child(12){margin-right:0;}
+#sec .hot .hot_in .list .list_in ul li a{display: block;width:100%;height:100%;}
+#sec .hot .hot_in .list .list_in ul li a:link{color:#000;}
+#sec .hot .hot_in .list .list_in ul li a:visited{color:#000;}
+#sec .hot .hot_in .list .list_in ul li a:active{color:#000;}
+
+#sec .hot .hot_in .list .list_in ul li a .content{width:100%;height:100%;position: relative;}
+#sec .hot .hot_in .list .list_in ul li a .content img {width: 100%;height: 100%;}
+#sec .hot .hot_in .list .list_in ul li a .content .contentheadcover {background: linear-gradient(to right, white, transparent);width: 100%;height: 60px;}
+#sec .hot .hot_in .list .list_in ul li a .content .contentheadcover .contenthead {position: absolute;color:#334;width: 100%;height: 65px;padding: 10px}
+#sec .hot .hot_in .list .list_in ul li a .content .contenthead p {height: auto;width: 250px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;letter-spacing: -0.5px;}
+#sec .hot .hot_in .list .list_in ul li a .content .contenthead p:nth-child(1) {font-size:20px;margin-bottom:3px;font-weight: 500;}
+#sec .hot .hot_in .list .list_in ul li a .content .contenthead p:nth-child(2) {font-size:12px; color: rgba(0,0,0,.9);}
+#sec .hot .hot_in .list .list_in ul li a .content .contentfootercover {position: absolute;bottom: 0;left: 0;background: rgba(255,255,255,.8);width: 100%;height: 30px;padding: 5px 0 0 10px;}
+#sec .hot .hot_in .list .list_in ul li a .content .contentfootercover:before {content: "";display:block;clear:both;}
+#sec .hot .hot_in .list .list_in ul li a .content .contentfootercover .contentfooter {width: 100%;display: inline-block;position: absolute;}
+#sec .hot .hot_in .list .list_in ul li a .content .contentfootercover .contentfooter .contentheart {float:left;font-size:18px;width: 100%;}
+#sec .hot .hot_in .list .list_in ul li a .content .contentfootercover .contentfooter .contentheart p {float:left;margin-right: 4px;}
+#sec .hot .hot_in .list .list_in ul li a .content .contentfootercover .contentfooter .contentheart p:nth-child(3) {margin-right:40px;color:red;opacity:0.8; float: right;}
+#sec .hot .hot_in .list .list_in ul li a .content .contentfootercover .contentfooter .contentheart p:nth-child(4) {font-size: 18px;line-height: 18px;float: right;color: black;margin-left: 10px;}
+
+
+#sec .hot .hot_in .list .list_in .hot_btn{border:1px solid #ccc;width:100%;height:60px;border-radius: 15px;overflow: hidden;}
+#sec .hot .hot_in .list .list_in .hot_btn a{display: block;width:100%;height:100%;line-height:60px;text-align: center;background: #fff;color:#000;}
+#sec .hot .hot_in .list .list_in .hot_btn a h2{font-size:14px;font-weight: 500;opacity: .8;}
+/* 인기트립 끝 */
+
+/* 이벤트배너 */
+#sec .event{margin-top:60px;height:220px;width:100%;background: #fff;}
+#sec .event .event_in{width:1240px;height:100%;margin:0 auto;border:1px solid #ccc;border-radius: 10px;overflow: hidden;}
+#sec .event .event_in .img{background: url(../img/event/1.jpg)no-repeat left center;height:100%;}
+#sec .event .event_in .img form{width:100%;height:100%;display: block;position: relative;}
+#sec .event .event_in .img form .form_in{position: absolute;right:40px;top:50%;transform: translateY(-50%);}
+#sec .event .event_in .img form input.email{height:44px;width:346px;line-height:44px;padding:0 10px;overflow: hidden;vertical-align: middle;outline: none;border-radius: 5px;border:1px solid #666;}
+#sec .event .event_in .img form input.btn{margin-left:15px ;border-radius: 5px;height:44px;width:150px;text-align: center;overflow: hidden;vertical-align: middle;background:#fff;border:1px solid #666;outline: none;}
+/* 이벤트배너 끝*/
+
+/* 예약슬라이드 */
+#sec .con_slide{width:100%;margin-top:60px;}
+#sec .con_slide .con_txt{width:1240px;margin:0 auto;font-size:18px;line-height:30px;font-weight: 500;margin-bottom:20px;}
+/* 예약슬라이드 끝 */
+
+/* 최저가 예약 */
+#sec .con_slide .lowprice_slider {width:1240px;height:100%;margin:0 auto;overflow: hidden;}
+#sec .con_slide .lowprice_slider .swiper-wrapper{margin-left:-53.7%;}
+#sec .con_slide .lowprice_slider .swiper-slide{width:220px;height:270px;border-radius: 10px;overflow: hidden;margin-right:25px;}
+#sec .con_slide .lowprice_slider .swiper-slide a{display: block;width: 100%;height: 100%;position: relative;}
+#sec .con_slide .lowprice_slider .swiper-slide a:link{color:#000;}
+#sec .con_slide .lowprice_slider .swiper-slide a:visited{color:#000;}
+#sec .con_slide .lowprice_slider .swiper-slide a:active{color:#000;}
+
+
+#sec .con_slide .lowprice_slider .swiper-slide .lowprice_in {width:100%;height:100%;}
+#sec .con_slide .lowprice_slider .swiper-slide .lowprice_in .lowprice_img {width:100%;height:80%;border-radius: 10px;}
+#sec .con_slide .lowprice_slider .swiper-slide .lowprice_in .lowprice_img .lowprice_imgcover{display: flex;justify-content: center;align-items: flex-start;flex-direction: column;width: 100%;height: 100%;opacity: 0;padding-left: 20px;transition: all .4s ease-in-out;}
+#sec .con_slide .lowprice_slider .swiper-slide .lowprice_in .lowprice_img .lowprice_imgcover:hover{background: rgba(0,0,0,.5);border-radius:10px;opacity: 1;}
+#sec .con_slide .lowprice_slider .swiper-slide .lowprice_in .lowprice_img .lowprice_imgcover p{color:#fff;}
+#sec .con_slide .lowprice_slider .swiper-slide .lowprice_in .lowprice_img .lowprice_imgcover p:nth-child(1){font-size:20px;margin-bottom:5px;}
+#sec .con_slide .lowprice_slider .swiper-slide .lowprice_in .lowprice_img .lowprice_imgcover p:nth-child(2){font-size:14px;}
+
+
+#sec .con_slide .lowprice_slider .swiper-slide .lowprice_in .lowprice_text {display:flex;margin-top:5px;}
+#sec .con_slide .lowprice_slider .swiper-slide .lowprice_in .lowprice_text .lefttext{width:136px;height:30px;}
+#sec .con_slide .lowprice_slider .swiper-slide .lowprice_in .lowprice_text .lefttext p{font-size:26px;font-weight:500;line-height:30px;}
+#sec .con_slide .lowprice_slider .swiper-slide .lowprice_in .lowprice_text .righttext{width:90px;height:30px;display: flex;flex-direction: column;justify-content:center;}
+#sec .con_slide .lowprice_slider .swiper-slide .lowprice_in .lowprice_text .righttext p{font-size:14px;font-weight: 500;}
+#sec .con_slide .lowprice_slider .swiper-slide .lowprice_in .lowprice_text .righttext p:nth-child(1){text-align: center;margin-bottom: 2px;padding: 2px;}
+#sec .con_slide .lowprice_slider .swiper-slide .lowprice_in .lowprice_text .righttext p:nth-child(2){text-align: center;padding: 2px}
+
+
+/* 최저가 예약 끝 */
+
+/* 아직 안정해진 곳 */
+#sec .con_slide .unknown_slider {width:1240px;height:100%;margin:0 auto;overflow: hidden;}
+#sec .con_slide .unknown_slider .swiper-wrapper{margin-left:-53.7%;}
+#sec .con_slide .unknown_slider .swiper-slide{width:220px;height:270px;border-radius: 10px;overflow: hidden;margin-right:25px;}
+#sec .con_slide .unknown_slider .swiper-slide a{display: block;width: 100%;height: 100%;position: relative;}
+#sec .con_slide .unknown_slider .swiper-slide a:link{color:#000;}
+#sec .con_slide .unknown_slider .swiper-slide a:visited{color:#000;}
+#sec .con_slide .unknown_slider .swiper-slide a:active{color:#000;}
+
+#sec .con_slide .unknown_slider .swiper-slide .unknown_in {width:100%;height:100%;}
+#sec .con_slide .unknown_slider .swiper-slide .unknown_in .unknown_img {width:100%;height:80%;border-radius: 10px;}
+#sec .con_slide .unknown_slider .swiper-slide .unknown_in .unknown_text {padding-left: 5px;}
+#sec .con_slide .unknown_slider .swiper-slide .unknown_in .unknown_text p {padding-bottom: 4px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;letter-spacing: -0.5px;}
+#sec .con_slide .unknown_slider .swiper-slide .unknown_in .unknown_text p:nth-child(1) {font-size: 16px;margin-top: 5px;}
+#sec .con_slide .unknown_slider .swiper-slide .unknown_in .unknown_text p:nth-child(2) {font-size: 12px;}
+/* 아직 안정해진 곳 끝 */
+
+/* 국내여행 카테고리 슬라이드 */
+#sec .kcategory {width:1240px;height:300px;margin:0 auto;display:block; margin-top: 20px;}
+#sec .kcategory .kcategory_head{font-size:22px;line-height:30px;font-weight: 500;margin: 10px 0 15px 0;}
+#sec .kcategory .kcategory_head .category_text{}
+#sec .kcategory .kcategorybtn {display: flex;justify-content: flex-end;}
+#sec .kcategory .kcategorybtn .kcategorybtn_com{width: 20px;height: 20px;display: flex;justify-content: center;align-items: center;cursor:pointer;color:#999;border:1px solid #999;font-size: 18px;border-radius: 5px;}
+#sec .kcategory .kcategorybtn .kcategorybtn_com:hover{background:#5de4c2;border:none;color:rgb(255, 255, 255);}
+#sec .kcategory .kcategorybtn .kcategorybtn1{margin-right:5px;}
+#sec .kcategory .kcategorybtn .kcategorybtn2{}
+#sec .kcategory .swiper-wrapper{}
+#sec .kcategory .swiper-wrapper .swiper-slide{height: 210px;display:block;}
+#sec .kcategory .swiper-wrapper .swiper-slide p{font-size:18px;text-align:center; cursor: pointer;}
+#sec .kcategory .swiper-wrapper .swiper-slide div{width: 100%;height: 198px;;margin-bottom:8px;border-radius:50%;cursor: pointer;}
+#sec .kcategory .swiper-wrapper .swiper-slide .kimg1 {background:url('../../resources/img/gory/categoryhotel.jpg') no-repeat 50% 50%;background-size:cover;}
+#sec .kcategory .swiper-wrapper .swiper-slide .kimg2 {background:url('../../resources/img/gory/categoryresort.jpg') no-repeat 50% 50%;background-size:cover;}
+#sec .kcategory .swiper-wrapper .swiper-slide .kimg3 {background:url('../../resources/img/gory/categorypension.jpg') no-repeat 50% 50%;background-size:cover;}
+#sec .kcategory .swiper-wrapper .swiper-slide .kimg4 {background:url('../../resources/img/gory/categorymotel.jpg') no-repeat 50% 50%;background-size:cover;}
+#sec .kcategory .swiper-wrapper .swiper-slide .kimg5 {background:url('../../resources/img/gory/categoryguesthouse.jpg') no-repeat 50% 50%;background-size:cover;}
+#sec .kcategory .swiper-wrapper .swiper-slide .kimg6 {background:url('../../resources/img/gory/categorycamping.jpg') no-repeat 50% 50%;background-size:cover;}
+#sec .kcategory .swiper-wrapper .swiper-slide .kimg7 {background:url('../../resources/img/gory/categorydelicious.jpg') no-repeat 50% 50%;background-size:cover;}
+#sec .kcategory .swiper-wrapper .swiper-slide .kimg8 {background:url('../../resources/img/gory/categorypackage.jpg') no-repeat 50% 50%;background-size:cover;}
+#sec .kcategory .swiper-wrapper .swiper-slide .kimg9 {background:url('../../resources/img/gory/categoryticket.jpg') no-repeat 50% 50%;background-size:cover;}
+/* 국내여행 카테고리 슬라이드 끝 */
+
+/* 모바일용 */
+.mobilApp{z-index: 999999999;position: fixed;left:50%;top:50%;transform: translate(-50%, -50%);width:80%;background: #fff;box-shadow: 0 0 20px rgba(0,0,0,.3);display: none;}
+.mobilApp.on{display: block;}
+.mobilApp .appIn{padding:60px 30px;text-align: center;}
+.mobilApp .appIn h2{font-size:54px;line-height:64px;}
+.mobilApp .appIn .appDown{display: flex;flex-wrap: wrap;margin-top:80px;}
+.mobilApp .appIn .appDown div{width:49%;border:1px solid rgba(0,0,0,.4);margin-right:1%;border-radius: 15px;}
+.mobilApp .appIn .appDown div:last-child{margin-right:0;margin-left:1%;}
+.mobilApp .appIn .appDown div a{display: block;padding:30px;font-size:38px;width:100%;color:#343434;font-weight: 500;}
+.mobilApp .appIn .appDown div:hover{border:1px solid transparent;}
+.mobilApp .appIn .appDown div:hover a{background: #5de4c2;color:#fff;}
+.mobilApp .appIn .closeBtn{font-size:38px;padding:30px 100px;font-weight: 500;color:#343434;width:100%;border:1px solid rgba(0,0,0,.4);border-radius: 15px;margin-top:30px;}
+.mobilApp .appIn .closeBtn:after{content: "";display: block;clear: both;}
+.mobilApp .appIn .closeBtn input{width:32px;height:32px;}
+.mobilApp .appIn .closeBtn label{margin-left:5px;}
+.mobilApp .appIn .closeBtn #check{float:left;}
+.mobilApp .appIn .closeBtn #close{float:right;}
+
+.mobilAppCover{z-index: 999999998;background: rgba(0,0,0,.6);position: fixed;left:0;top:0;right:0;bottom:0;display: none;}
+.mobilAppCover.on{display: block;}

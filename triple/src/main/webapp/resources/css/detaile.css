@@ -1,0 +1,233 @@
+@charset "UTF-8";
+
+#sec{width: 100%;height: 100%;}
+#sec .main{width: 100%;}
+#sec .main .main_in{width:1300px;padding:0 30px;margin:0 auto;border:1px solid rgba(0,0,0,.15);margin-top:50px;border-radius: 10px;}
+
+#sec .main .main_in .tapName{width: 100%;height: 100%;}
+#sec .main .main_in .tapName .nameIn{width: 100%;height: 100%;}
+#sec .main .main_in .tapName .nameIn ul{width: 100%;height: 100%;display: flex;flex-wrap: wrap;border-bottom:1px solid rgba(0,0,0,.15);}
+#sec .main .main_in .tapName .nameIn ul li{width: 50%;margin-bottom:-1px;}
+#sec .main .main_in .tapName .nameIn ul li h2{width: 100%;padding:20px 0;cursor: pointer;text-align: center;font-size:14px;border-bottom:4px solid transparent;transition: all .2s ease-in-out;}
+#sec .main .main_in .tapName .nameIn ul li.on h2{border-bottom:4px solid #5de4c2;}
+
+#sec .main .main_in .tapBottom .nameIn ul{border-top:1px solid rgba(0,0,0,.15);border-bottom:none;}
+#sec .main .main_in .tapBottom .nameIn ul li{margin-bottom:0;margin-top:-1px;}
+#sec .main .main_in .tapBottom .nameIn ul li h2{border-top:4px solid transparent;border-bottom:none}
+#sec .main .main_in .tapBottom .nameIn ul li.on h2{border-top:4px solid #5de4c2;border-bottom:none;}
+
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .one{margin:50px 0 0;padding-bottom:50px;border-bottom:1px solid rgba(0,0,0,.15);}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .one .oneIn{display: flex;flex-wrap: wrap;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .one .oneIn .left{width:43%;padding-right:60px;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .one .oneIn .left .tit{padding-bottom:36px;color:#343434;border-bottom:1px solid rgba(0,0,0,.15);position: relative;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .one .oneIn .left .tit h2{font-size:24px;margin-bottom:8px;font-weight: 500;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .one .oneIn .left .tit h3{font-size:14px;opacity: .4;line-height:16px;}
+
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .one .oneIn .left .tit .heartBox{position: absolute;right:0;top:0;padding:5px;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .one .oneIn .left .tit .heartBox .probtn_com{overflow: hidden;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .one .oneIn .left .tit .heartBox::after{content: "";display: block;clear: both;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .one .oneIn .left .tit .heartBox .heartIcon{display: flex;flex-wrap: wrap;cursor: pointer;float: right;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .one .oneIn .left .tit .heartBox .heartIcon .heartNum{margin-left:5px; font-size: 20px; line-height: 28px;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .one .oneIn .left .tit .heartBox .onePlusBtn{cursor: pointer;margin-top:10px;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .one .oneIn .left .tit .heartBox .onePlusBtn span{font-size: 14px; padding: 5px; border: 1px solid rgba(0,0,0,.3); display: block; letter-spacing: -.5px;border-radius: 5px;}
+
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .one .oneIn .left .context{margin:55px 0 0;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .one .oneIn .left .context ul li{height:56px;margin-bottom:12px;display: flex;flex-wrap: wrap;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .one .oneIn .left .context ul li .img{width:50px;height:100%;margin-right:19px;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .one .oneIn .left .context ul li .img img{display: block;width: 100%;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .one .oneIn .left .context ul li .txt{width:calc(100% - 69px);height:100%;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .one .oneIn .left .context ul li .txt h2{line-height:52px;font-size:24px;font-weight: 500;}
+
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .one .oneIn .right{width:57%;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .one .oneIn .right .mySwiper2{border-radius: 10px;overflow: hidden;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .one .oneIn .right .mySwiper2 .swiper-slide .img{width:100%;height:366px;}
+
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .one .oneIn .right .mySwiper2 .btn{position: absolute;display: flex;flex-wrap: wrap;left:50%;bottom:30px;transform: translateX(-50%);z-index: 1;border-radius: 10px;background: rgba(255,255,255,.5);}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .one .oneIn .right .mySwiper2 .btn .swiper-button-next{position:static;left:auto;top:auto;right:auto;bottom:auto;margin-top:auto;width:30px;height:30px;color:#343434;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .one .oneIn .right .mySwiper2 .btn .swiper-button-next:after{display: none;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .one .oneIn .right .mySwiper2 .btn .swiper-pagination{position:static;left:auto;top:auto;right:auto;bottom:auto;margin-top:auto;width:50px;height:30px;font-size:14px;color:#343434;line-height:28px;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .one .oneIn .right .mySwiper2 .btn .swiper-button-prev{position:static;left:auto;top:auto;right:auto;bottom:auto;margin-top:auto;width:30px;height:30px;color:#343434;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .one .oneIn .right .mySwiper2 .btn .swiper-button-prev::after{display: none;}
+.swiper-button-disabled{opacity: 1;}
+
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .one .oneIn .right .mySwiper{margin-top:15px;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .one .oneIn .right .mySwiper .swiper-slide{border-radius: 10px;overflow: hidden;cursor: pointer;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .one .oneIn .right .mySwiper .swiper-slide .img{height:106px;}
+
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .tow{border-bottom:1px solid rgba(0,0,0,.15);}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .tow .towIn{padding:48px 0;position: relative;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .tow .towIn > h2{font-size:16px;line-height:24px;color:#343434;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .tow .towIn .hiddenText{display: none;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .tow .towIn .hiddenText.on{display: block;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .tow .towIn .hiddenBtn{background: rgba(0,0,0,.4);border-radius: 10px;overflow: hidden;display: flex;justify-content: center;align-items: center;width:48px;height:16px;cursor: pointer;margin-top:8px;display: none;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .tow .towIn .hiddenBtn.on{display: flex;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .tow .towIn .hiddenBtn span{width:3px;height:3px;background: #fff;border-radius: 50%;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .tow .towIn .hiddenBtn span:nth-child(2){margin:0 4px;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .tow .towIn .btnHidden{font-size:14px;letter-spacing: .5px;position: absolute;right:0;bottom:50px;padding:5px;cursor: pointer;display: none;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .tow .towIn .plus.on{display: block;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .tow .towIn .down.on{display: block;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .tow .towIn .btnHidden i{margin-left:5px;font-size:12px;}
+
+
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .three{margin:50px 0 0;padding-bottom:50px;border-bottom:1px solid rgba(0,0,0,.15);}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .three .threeIn{}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .three .threeIn .tit{margin-bottom:20px;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .three .threeIn .tit h2{font-size:18px;line-height:24px;font-weight: 500;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .three .threeIn .threeCon{}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .three .threeIn .threeCon ul{display: flex;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .three .threeIn .threeCon ul li{border:1px solid red;width:20%;display: flex;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .three .threeIn .threeCon ul li .img{border:1px solid blue;width:50px;height:50px;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .three .threeIn .threeCon ul li .img img{display: block;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .three .threeIn .threeCon ul li .txt{display: flex;align-items: flex-end;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .three .threeIn .threeCon ul li .txt h3{font-size:14px;line-height:24px;font-weight: 500;}
+
+
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .four{margin:50px 0 0;padding-bottom:50px;border-bottom:1px solid rgba(0,0,0,.15);}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .four .fourIn{}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .four .fourIn .tit{margin-bottom:20px;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .four .fourIn .tit h2{font-size:18px;line-height:24px;font-weight: 500;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .four .fourIn .fourCon{display: flex;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .four .fourIn .fourCon .left{width:50%;display: flex;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .four .fourIn .fourCon .left > div{width:50%;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .four .fourIn .fourCon .left > div > h2{font-size:16px;font-weight: 500;margin-bottom:28px;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .four .fourIn .fourCon .left > div > h2 ul{}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .four .fourIn .fourCon .left > div > ul li{display: flex;font-size:12px;line-height:24px;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .four .fourIn .fourCon .left > div > ul li h2{width:64px;font-weight: 600;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .four .fourIn .fourCon .right{width:50%;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .four .fourIn .fourCon .right .txt{font-size:12px;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .four .fourIn .fourCon .right .txt h2{font-size:18px;line-height:24px;font-weight: 500;margin-bottom:28px;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .four .fourIn .fourCon .right .txt h3{line-height:24px;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .four .fourIn .fourCon .right .table{width:100%;margin-top:20px;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .four .fourIn .fourCon .right .table table{border:1px solid  #d6d6d6;border-collapse: collapse;width:100%;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .four .fourIn .fourCon .right .table table tbody tr{font-size:12px;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .four .fourIn .fourCon .right .table table tbody tr th{border:1px solid #d6d6d6;width:10%;line-height:28px;font-weight: 600;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .four .fourIn .fourCon .right .table table tbody tr td{line-height:40px;border:1px solid #d6d6d6;width:10%;text-align: center;}
+
+
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .five{margin:50px 0 0;padding-bottom:50px;border-bottom:1px solid rgba(0,0,0,.15);}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .five .fiveIn{}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .five .fiveIn .tit{margin-bottom:20px;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .five .fiveIn .tit h2{font-size:18px;line-height:24px;font-weight: 500;}
+
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .five .fiveIn .map{border-radius: 10px;border:1px solid red;overflow: hidden;height:300px;width:100%;}
+
+
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .six{margin:50px 0 0;padding-bottom:50px;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .six .sixIn{}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .six .sixIn .tit{margin-bottom:20px;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .six .sixIn .tit h2{font-size:18px;line-height:24px;font-weight: 500;}
+
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .six .sixIn .reviewWrap{border:1px solid rgba(0,0,0,.15);border-radius: 10px;margin-bottom:20px;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .six .sixIn .reviewWrap ul{display: flex;flex-wrap: wrap;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .six .sixIn .reviewWrap ul li{overflow: hidden;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .six .sixIn .reviewWrap ul li:first-child{display: flex;flex-wrap: wrap;width:100%;padding:0 0 5px;border-bottom:1px solid rgba(0,0,0,.15);padding-left:10px;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .six .sixIn .reviewWrap ul li:nth-child(2){border-right:1px solid rgba(0,0,0,.15);width:calc(100% - 280px);}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .six .sixIn .reviewWrap ul li:nth-child(2):after{content: "";display: block;clear: both;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .six .sixIn .reviewWrap ul li:nth-child(3){width:280px;padding:0 10px;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .six .sixIn .reviewWrap ul li:nth-child(3) .preview{}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .six .sixIn .reviewWrap ul li:nth-child(3) .preview img{display: block;object-fit: cover;width:100%;height:140px;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .six .sixIn .reviewWrap ul li:nth-child(3) input{padding:10px 0;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .six .sixIn .reviewWrap ul li textarea{resize:none;overflow: auto;padding:10px;width:100%;height:calc(100% - 50px);border:0;outline: none;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .six .sixIn .reviewWrap ul li:nth-child(2) .reviewBtn{border:1px solid rgba(0,0,0,.15);padding:10px 20px;font-size:14px;letter-spacing: 1px;background: #fff;float:right;border-radius: 10px;margin-right:10px;cursor: pointer;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .six .sixIn .reviewWrap ul li:nth-child(2) .reviewBtn:hover{border:1px solid transparent;color:#fff;background: #5de4c2;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .six .sixIn .reviewWrap ul li h2{line-height:30px;font-size:14px;font-weight: 500;letter-spacing: 1px;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .six .sixIn .reviewWrap ul li input{}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .six .sixIn .reviewWrap ul li > span{font-size:22px;line-height:30px;margin-left:10px;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .six .sixIn .reviewWrap ul li > span .star_r{}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .six .sixIn .reviewWrap ul li > span input{height:30px;margin: 0;padding: 0;}
+
+
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .six .sixIn .sixCon{border-radius: 10px;border:1px solid rgba(0,0,0,.15);overflow: hidden;height:464px;width:100%;padding:10px;overflow: auto;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .six .sixIn .sixCon ul{}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .six .sixIn .sixCon ul li{position: relative;overflow: hidden;border-bottom:1px solid rgba(0,0,0,.1);padding-bottom:15px;margin-bottom:15px;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .six .sixIn .sixCon ul li:after{display: block;content: "";clear: both;}
+
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .six .sixIn .sixCon ul li .img{float:left;width:180px;height:104px;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .six .sixIn .sixCon ul li .img img{display: block;width:100%;height:100%;}
+
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .six .sixIn .sixCon ul li .info{width:calc(100% - 190px);float:left;margin-right:10px;padding-right:20px;border-right:1px solid rgba(0,0,0,.15);}
+
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .six .sixIn .sixCon ul li .info pre{width:100%;line-height:20px;font-size:14px;overflow: hidden;text-overflow:ellipsis;display: -webkit-box;-webkit-line-clamp: 4;-webkit-box-orient: vertical;border-bottom:1px solid rgba(0,0,0,.15);padding-bottom:4px;cursor: pointer;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .six .sixIn .sixCon ul li .info pre.on{display: block;}
+
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .six .sixIn .sixCon ul li .user{display: flex;font-size:14px;margin-top:12px;position: relative;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .six .sixIn .sixCon ul li .user img{width:50px;height:50px;margin-right:10px;border-radius: 50%;overflow: hidden;border:1px solid rgba(0,0,0,.2);}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .six .sixIn .sixCon ul li .user .userIn{position: relative;width:100%;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .six .sixIn .sixCon ul li .user h3{font-size:16px;line-height:30px;font-weight: 500;color:#343434;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .six .sixIn .sixCon ul li .user h4{line-height:20px;color: #343434;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .six .sixIn .sixCon ul li .user .star2{height:30px;font-size:22px;line-height:30px;position: absolute;top:0;right:0;}
+
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .six .sixIn .sixCon ul li .close{position: absolute;right:0;bottom:0;width:30px;height:30px;cursor: pointer;display: flex;justify-content: center;align-items: center;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .six .sixIn .sixCon ul li .close i{font-size:20px;}
+
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .six .sixIn .sixCon .plusBtn{border:1px solid rgba(0,0,0,.3);width:200px;height:30px;margin:0 auto;border-radius: 10px;cursor: pointer;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .six .sixIn .sixCon .plusBtn h2{font-size:14px;line-height:26px;width:100%;text-align: center;}
+#sec .main .main_in .tapCon .conIn .tapMenu .menuIn .six .sixIn .sixCon .plusBtn h2 i{font-size:12px;line-height:26px;margin-left:10px;}
+
+#sec .main .main_in .tapCon .conIn .tapMenu .room{width:100%;height:100%;padding:50px 0; border-bottom:1px solid rgba(0,0,0,.2);}
+#sec .main .main_in .tapCon .conIn .tapMenu .room:last-child{border-bottom:0px;}
+#sec .main .main_in .tapCon .conIn .tapMenu .room .roomIn{width:100%;height:100%;display: flex;}
+#sec .main .main_in .tapCon .conIn .tapMenu .room .roomIn .left{width:47%;border-radius: 10px;overflow: hidden;}
+#sec .main .main_in .tapCon .conIn .tapMenu .room .roomIn .left .swiper{width:100%;height:100%;}
+#sec .main .main_in .tapCon .conIn .tapMenu .room .roomIn .left .swiper .swiper-slide{width:100%;height:100%;}
+
+#sec .main .main_in .tapCon .conIn .tapMenu .room .roomIn .left .swiper .arrowBtn{position: absolute;display: flex;flex-wrap: wrap;left:50%;bottom:30px;transform: translateX(-50%);z-index: 1;border-radius: 10px;background: rgba(255,255,255,.5);}
+#sec .main .main_in .tapCon .conIn .tapMenu .room .roomIn .left .swiper .arrowBtn .swiper-button-next{position:static;left:auto;top:auto;right:auto;bottom:auto;margin-top:auto;width:30px;height:30px;color:#343434;}
+#sec .main .main_in .tapCon .conIn .tapMenu .room .roomIn .left .swiper .arrowBtn .swiper-button-next:after{display: none;}
+#sec .main .main_in .tapCon .conIn .tapMenu .room .roomIn .left .swiper .arrowBtn .swiper-pagination{position:static;left:auto;top:auto;right:auto;bottom:auto;margin-top:auto;width:50px;height:30px;font-size:14px;color:#343434;line-height:28px;}
+#sec .main .main_in .tapCon .conIn .tapMenu .room .roomIn .left .swiper .arrowBtn .swiper-button-prev{position:static;left:auto;top:auto;right:auto;bottom:auto;margin-top:auto;width:30px;height:30px;color:#343434;}
+#sec .main .main_in .tapCon .conIn .tapMenu .room .roomIn .left .swiper .arrowBtn .swiper-button-prev::after{display: none;}
+.swiper-button-disabled{opacity: 1;}
+
+
+#sec .main .main_in .tapCon .conIn .tapMenu .room .roomIn .right{width:53%;padding-left:45px;color:#343434;position: relative;padding-top:30px;padding-bottom:40px;}
+#sec .main .main_in .tapCon .conIn .tapMenu .room .roomIn .right:after{display: block;content: "";clear: both;}
+#sec .main .main_in .tapCon .conIn .tapMenu .room .roomIn .right .tit{position: relative;}
+#sec .main .main_in .tapCon .conIn .tapMenu .room .roomIn .right .tit h2{font-size:24px;font-weight: 500;line-height:34px;}
+#sec .main .main_in .tapCon .conIn .tapMenu .room .roomIn .right .tit h2 span{margin-left:5px;font-size:12px;}
+#sec .main .main_in .tapCon .conIn .tapMenu .room .roomIn .right .tit h3{line-height:24px;font-size:14px;font-weight: 500;opacity: .6;margin-bottom:20px;margin-top:5px;}
+
+#sec .main .main_in .tapCon .conIn .tapMenu .room .roomIn .right .tag ul:after{content: "";display: block;clear: both;}
+#sec .main .main_in .tapCon .conIn .tapMenu .room .roomIn .right .tag ul li{float:left;text-align: center;margin-right:5px;}
+
+#sec .main .main_in .tapCon .conIn .tapMenu .room .roomIn .right .tag ul li .img{width:40px;height:40px;margin:0 auto;}
+#sec .main .main_in .tapCon .conIn .tapMenu .room .roomIn .right .tag ul li .img img{display: block;width:100%;height:100%;}
+
+#sec .main .main_in .tapCon .conIn .tapMenu .room .roomIn .right .tag ul li .txt{margin-top:5px;}
+#sec .main .main_in .tapCon .conIn .tapMenu .room .roomIn .right .tag ul li .txt h3{font-size:12px;font-weight: 500;}
+
+#sec .main .main_in .tapCon .conIn .tapMenu .room .roomIn .right .money{margin:10px 0 34px;width:100%;line-height:22px;}
+#sec .main .main_in .tapCon .conIn .tapMenu .room .roomIn .right .money table{border-collapse: collapse;width:100%;}
+#sec .main .main_in .tapCon .conIn .tapMenu .room .roomIn .right .money table tr{font-size:14px;font-weight: 500;color:#808080;}
+#sec .main .main_in .tapCon .conIn .tapMenu .room .roomIn .right .money table tr th{border:1px solid #d6d6d6;padding:16px 0;width:10%;background: #eeeeee;}
+#sec .main .main_in .tapCon .conIn .tapMenu .room .roomIn .right .money table tr th:first-child{width:25%;background: #f8f1e9;}
+#sec .main .main_in .tapCon .conIn .tapMenu .room .roomIn .right .money table tr td{border:1px solid #d6d6d6;padding:12px 0;text-align: center;}
+
+#sec .main .main_in .tapCon .conIn .tapMenu .room .roomIn .right .re{overflow: hidden;border-radius: 10px;background: #fff;line-height:22px;width:260px;cursor: pointer;float:right;color:#343434;text-align: center;border:1px solid rgba(0,0,0,.3);padding:16px 0;font-weight: 500;}
+#sec .main .main_in .tapCon .conIn .tapMenu .room .roomIn .right .re:hover{background: #5de4c2;color:#fff;border:1px solid transparent;}
+.plusList{position: fixed;width:600px;height:600px;overflow: hidden;border-radius: 10px;background: #fff;box-shadow: 0 0 15px rgba(0,0,0,.15);left:50%;top:50%;transform: translate(-50%, -50%);z-index: 1000;display: none;}
+.plusList .tit{padding:20px 0 0;height:87px;border-bottom:1px solid rgba(0,0,0,.15);}
+.plusList .tit .travelName{display: flex;flex-wrap: wrap;padding:5px 30px;}
+.plusList .tit .travelName h2{width:100%;text-align: center;font-size:22px;font-weight: 500;line-height:28px;margin-bottom:10px;}
+.plusList .tit .travelName span{width:33.33%;text-align: center;line-height:18px;font-size:14px;}
+.plusList .tit .travelName span:nth-child(2){width:20%;text-align: left;}
+.plusList .tit .travelName span:nth-child(3){width:27%;}
+.plusList .tit .travelName span:last-child{width:42%;}
+.plusList .plusListIn{padding:10px 30px;height:calc(100% - 87px);overflow: auto;}
+.plusListCover{position: fixed;width: 100%;height: 100%;left:0;top:0;right:0;bottom:0;background: rgba(0,0,0,.2);z-index: 999;display: none;}
+.plusList.on{display: block;}
+.plusListCover.on{display: block;}
+
+.plusList .plusListIn > div{display: flex;flex-wrap: wrap;line-height:22px;font-size:14px;padding-bottom:6px;border-bottom:1px solid rgba(0,0,0,.1);padding-top:6px;cursor: pointer;}
+.plusList .plusListIn > div.on{background: #5de4c2;color:#fff;}
+.plusList .plusListIn > div:hover{background: #5de4c2;color:#fff;}
+.plusList .plusListIn > div:last-child{margin-bottom:0;border-bottom:0;padding-bottom:0;}
+.plusList .plusListIn > div p{width:calc(100% - 35% - 25% - 25px);letter-spacing: .5px;}
+.plusList .plusListIn > div p:nth-child(2){width:25%;padding-right:15px;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;}
+.plusList .plusListIn > div h5{width:22px;cursor: pointer;text-align: center;}
+
+.calendar{margin-top:20px;text-align: center;}
+.calendar ul{display: inline-block;}
+.calendar ul li{display: flex;flex-wrap: wrap;font-size:14px;line-height:28px;}
+.calendar ul li h2{margin-right:10px;}
+.calendar ul li input{border:1px solid rgba(0,0,0,.3);padding:0 10px;width:86px;border-radius: 5px;letter-spacing: .5px;cursor: pointer;outline:none;}

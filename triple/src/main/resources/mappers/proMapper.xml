@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.triple.finalp.pro.dao.ProductDao">
+	<!-- //test //test//test//test//test//test//test//test//test-->
+	<select id="find" resultType="ProVo">
+		select *
+		from product
+		where product_CATEGORY = #{id}
+	</select>
+	
+	<!-- 상품등록 (업주) -->
+	<insert id="register">
+		insert into
+		product(product_id,product_img1,product_img2,product_img3,product_img4,product_img5,product_category,product_address,product_locationx,product_locationy,product_city,product_name,product_shortword,product_subcontent)
+		values(#{product_id},#{product_img1},#{product_img2},#{product_img3},#{product_img4},#{product_img5},#{product_category},#{product_address},#{product_locationx},#{product_locationy},#{product_city},#{product_name},#{product_shortword},#{product_subcontent})
+	</insert>
+	<!-- 상품디테일등록 (업주) -->
+	<insert id="registerDetail">
+		insert into product_detail(product_id,pd_contents,pd_img1,pd_img2,pd_img3,pd_name,pd_price)
+		values(#{product_id},#{pd_contents},#{pd_img1},#{pd_img2},#{pd_img3},#{pd_name},#{pd_price})
+	</insert>
+	<!-- 상품 목록들 (업주) -->
+	<select id="getProId" resultType="ProVo">
+		select * from product
+		where product_admin_id=#{admin_id}
+	</select>
+	<!-- 상품디테일 (업주)//왜만들었찌 다시....보기 <select id="getProDId" resultType="ProDVo"> 
+		select * from product_detail where product_id=#{product_id} </select> -->
+
+	<!-- 전체상품리스트 -고객 -->
+	<select id="getAllProList" resultType="ProVo">
+		select * from product
+	</select>
+	<!-- 상품클릭시 보여주는 정보 -고객 -->
+	<select id="goDetail" resultType="ProDVo">
+		select *
+		from product_detail
+		where product_id = #{product_id}
+	</select>
+	<select id="findp" resultType="ProVo">
+		select *
+		from product
+		where PRODUCT_ID = #{PRODUCT_ID}
+	</select>
+	
+	<select id="findpd" resultType="ProDVo">
+		select *
+		from product_detail
+		where PRODUCT_ID = #{PRODUCT_ID}
+	</select>
+	<select id="Ddetail" resultType="ProDVo">
+		select *
+		from product p ,product_detail d
+		where d.pd_name= #{pd_name}
+	</select>
+	
+	<select id="getProIdC" resultType="integer">
+		select count(*) 
+		from product
+		where product_admin_id=#{admin_id}
+	</select>
+	
+	<select id="mypro" resultType="integer">
+		select count(*)
+		from product
+		where product_id = #{product_id}
+		and product_admin_id = #{product_admin_id}
+	</select>
+	
+	<select id="getdetail" resultType="ProDVo">
+		select *
+		from product_detail
+		where pd_id = #{pd_id}
+	</select>
+	
+	<update id="updateProduct">
+      update product
+      set product_img1=#{product_img1},product_img2=#{product_img2},product_img3=#{product_img3},product_img4=#{product_img4},product_img5=#{product_img5},product_category=#{product_category},product_address=#{product_address},product_locationx=#{product_locationx},product_locationy=#{product_locationy},product_city=#{product_city},product_name=#{product_name},product_shortword=#{product_shortword},product_subcontent=#{product_subcontent}
+      where product_id = #{product_id}
+   </update>
+   
+   <update id="updateProductD">
+   	  update product_detail
+      set pd_img1=#{pd_img1},pd_img2=#{pd_img2},pd_img3=#{pd_img3},pd_name=#{pd_name},pd_price=#{pd_price},pd_contents=#{pd_contents}
+      where pd_id = #{pd_id}
+   </update>
+   
+   <select id="gettag" resultType="TagTagVo">
+		select *
+		from tag
+		where tag_id = #{product_id}
+   </select>
+   
+   <select id="indexH" resultType="UltiVo">
+   		select p.product_id , product_img1, product_name , product_city , product_category , product_shortword , min(pd_price) as pd_price , (select count(*) from heart where HEART_ID = p.PRODUCT_ID) as heart_count
+		from product p join product_detail pd
+		on p.product_id = pd.product_id
+		group by product_id
+		order by heart_count desc
+		limit 12
+   </select>
+   
+   <select id="indexL" resultType="UltiVo">
+   		select p.product_id , product_img1, product_name , product_city , product_category , product_shortword , cast(replace(pd_price,',','') as unsigned) as pd_price3,
+        (select pd2.pd_price
+   		from product_detail pd2
+        where pd2.product_id = p.product_id
+        order by cast(replace(pd2.pd_price,',','') as unsigned)
+        limit 1) as pd_price , (select count(*) from heart where HEART_ID = p.PRODUCT_ID) as heart_count
+		from product p join product_detail pd
+		on p.product_id = pd.product_id
+		group by product_id
+		having p.product_category = #{product_category}
+        order by pd_price3
+		limit 2
+   </select>
+   
+   <select id="popList" resultType="UltiVo">
+   		select p.product_id , product_img1, product_name , product_city , product_category , product_shortword , min(pd_price) as pd_price , (select count(*) from heart where HEART_ID = p.PRODUCT_ID) as heart_count
+		from product p join product_detail pd
+		on p.product_id = pd.product_id
+		group by product_id
+		order by heart_count desc
+		limit 32
+   </select>
+   
+   <select id="getpdp" resultType="String">
+   		select pd_price
+   		from product_detail
+   		where product_id = #{product_id}
+        order by cast(pd_price as unsigned)
+        limit 1
+   </select>
+   
+		
+</mapper>

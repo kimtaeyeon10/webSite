@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+                         "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+	<typeAliases>
+		<typeAlias alias="MagVo" type="com.triple.finalp.mag.vo.MagVo" />
+		<typeAlias alias="ProVo" type="com.triple.finalp.pro.vo.ProductVo" />
+		<typeAlias alias="ProDVo" type="com.triple.finalp.pro.vo.ProductDetailVo" />
+		<typeAlias alias="MemVo" type="com.triple.finalp.mem.vo.MemVo" />
+		<typeAlias alias="ReviewVo" type="com.triple.finalp.review.vo.ReviewVo" />
+		<typeAlias alias="TagVo" type="com.triple.finalp.tag.vo.TagVo" />
+		<typeAlias alias="TagTagVo" type="com.triple.finalp.tag.vo.TagTagVo" />
+		<typeAlias alias="MyPlanVo" type="com.triple.finalp.mem.vo.MyPlanVo" />
+		<typeAlias alias="PlanConVo" type="com.triple.finalp.mem.vo.PlanConVo" />
+		<typeAlias alias="QnaVo" type="com.triple.finalp.qna.vo.QnaVo" />
+      	<typeAlias alias="QnaRepVo" type="com.triple.finalp.qna.vo.QnaRepVo" />
+      	<typeAlias alias="NoticeVo" type="com.triple.finalp.qna.vo.NoticeVo" />
+      	<typeAlias alias="UltiVo" type="com.triple.finalp.pro.vo.UltiProVo" />
+      	<typeAlias alias="PayVo" type="com.triple.finalp.data.vo.PayVo" />
+      	<typeAlias alias="MyproVo" type="com.triple.finalp.mem.vo.MyproductVo" />
+	</typeAliases>
+</configuration>
