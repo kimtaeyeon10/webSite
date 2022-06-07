@@ -18,7 +18,8 @@
   
 ### (3) ERD Diagram  
 [TRIPLE_DIA_erd.pdf](https://github.com/kimtaeyeon10/webSite/files/8852383/TRIPLE_DIA_erd.pdf)  
-본인 역할 :  
+  
+### 본인 역할 :  
 ### (1)고객센터 페이지  
 #### - 카테고리 클릭시 이동 / 관리자의 공지등록  
   
