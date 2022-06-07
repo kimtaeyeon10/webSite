@@ -17,4 +17,30 @@
 [TRIPLE_DIA_use.pdf](https://github.com/kimtaeyeon10/webSite/files/8852381/TRIPLE_DIA_use.pdf)
   
 ### (3) ERD Diagram  
-[TRIPLE_DIA_erd.pdf](https://github.com/kimtaeyeon10/webSite/files/8852383/TRIPLE_DIA_erd.pdf)
+[TRIPLE_DIA_erd.pdf](https://github.com/kimtaeyeon10/webSite/files/8852383/TRIPLE_DIA_erd.pdf)  
+본인 역할 :  
+(1)고객센터 페이지  
+- 카테고리 클릭시 이동 / 관리자의 공지등록  
+  
+(2)상품관련 기능  
+- 상품 등록, 상품 상세페이지 등록  
+  
+(3) 400, 404, 500 에러 발생시 공지 페이지
+  
+배운점 :   
+(1) 에러페이지 처리는 간단했다.  
+web.xml에서 <error-page>처리 ..   
+	<error-page>  
+      <error-code>404</error-code>  
+      <location>/WEB-INF/views/error.jsp</location>  
+   </error-page>  
+   <error-page>  
+      <error-code>403</error-code>  
+      <location>/WEB-INF/views/error3.jsp</location>  
+   </error-page>   <error-page>  
+      <error-code>500</error-code>  
+      <location>/WEB-INF/views/error5.jsp</location>  
+   </error-page>  
+(2) MySQL 사용 , 깃  
+  
+(3) 아마존 웹 서비스(AWS) EC2 배포를 통해 웹 서버 구축 방법 이해  
