@@ -13,10 +13,12 @@
 #### 회원- 기차/항공 검색, 여행지/매거진 검색, 실시간문의, 숙박시설 예약 , 고객센터(나의 문의리스트, 게시판문의작성, 오프라인가이드), 회원정보(리뷰,내여행,수정)  
 #### 비회원 - 기차/항공 검색, 여행지/매거진 검색, 실시간문의  
 #### 관리자 - 상품관리(상품등록/수정/삭제/확인), 매거진작성, 고객센터 관리(공지사항작성, 처리안된 문의)  
-### (2) Usecase Diagram  
+### (2) prototype (kakao oven)
+### - https://ovenapp.io/view/vBuxiY2UxZV8MurgCE0ZgT8b1fdzTnK7/K9C7A
+### (3) Usecase Diagram  
 [TRIPLE_DIA_use.pdf](https://github.com/kimtaeyeon10/webSite/files/8852381/TRIPLE_DIA_use.pdf)
   
-### (3) ERD Diagram  
+### (4) ERD Diagram  
 [TRIPLE_DIA_erd.pdf](https://github.com/kimtaeyeon10/webSite/files/8852383/TRIPLE_DIA_erd.pdf)  
   
 ### 본인 역할 :  
